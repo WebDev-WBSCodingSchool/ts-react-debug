@@ -7,9 +7,13 @@ const colors: Record<Category, string> = {
   food: '#ea580c'
 };
 
-const toLabel = category => category.toUpperCase();
+const toLabel = (category: Category): string => category.toUpperCase();
 
-const Badge = ({ category }) => (
+interface BadgeProps {
+  category: Category;
+}
+
+const Badge = ({ category }: BadgeProps) => (
   <span className="badge" style={{ backgroundColor: colors[category] }}>
     {toLabel(category)}
   </span>

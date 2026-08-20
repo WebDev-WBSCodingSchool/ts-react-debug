@@ -5,15 +5,16 @@ import EventForm from '../components/EventForm';
 import EventList from '../components/EventList';
 import SearchBar from '../components/SearchBar';
 import { getEvents } from '../data/events';
+import type { EventItem, Filter, NewEvent } from '../types';
 
-const nextId = events =>
+const nextId = (events: EventItem[]): number =>
   events.length === 0 ? 1 : Math.max(...events.map(event => event.id)) + 1;
 
 const HomePage = () => {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<EventItem[]>([]);
   const [query, setQuery] = useState('');
-  const [category, setCategory] = useState('all');
-  const [error, setError] = useState(null);
+  const [category, setCategory] = useState<Filter>('all');
+  const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const HomePage = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const handleCreate = newEvent => {
+  const handleCreate = (newEvent: NewEvent) => {
     setEvents([...events, { id: nextId(events), ...newEvent }]);
   };
 

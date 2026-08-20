@@ -1,9 +1,15 @@
 import { useRef } from 'react';
+import type { ChangeEvent } from 'react';
 
-const SearchBar = ({ value, onChange }) => {
-  const inputRef = useRef(null);
+interface SearchBarProps {
+  value: string;
+  onChange: (next: string) => void;
+}
 
-  const handleChange = e => {
+const SearchBar = ({ value, onChange }: SearchBarProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
 

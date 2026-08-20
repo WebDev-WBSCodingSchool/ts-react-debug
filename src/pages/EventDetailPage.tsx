@@ -4,11 +4,12 @@ import Badge from '../components/Badge';
 import Card from '../components/Card';
 import FavoriteButton from '../components/FavoriteButton';
 import { getEventById } from '../data/events';
+import type { EventItem } from '../types';
 import { formatDate, formatPrice } from '../utils/format';
 
 const EventDetailPage = () => {
   const { eventId } = useParams();
-  const [event, setEvent] = useState(null);
+  const [event, setEvent] = useState<EventItem | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

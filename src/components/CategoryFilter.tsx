@@ -1,8 +1,13 @@
-import type { Category } from '../types';
+import type { Filter } from '../types';
 
-const options: Category[] = ['all', 'music', 'sports', 'tech', 'food'];
+const options: Filter[] = ['all', 'music', 'sports', 'tech', 'food'];
 
-const CategoryFilter = ({ value, onChange }) => (
+interface CategoryFilterProps {
+  value: Filter;
+  onChange: (next: Filter) => void;
+}
+
+const CategoryFilter = ({ value, onChange }: CategoryFilterProps) => (
   <div className="filters">
     {options.map(option => (
       <button

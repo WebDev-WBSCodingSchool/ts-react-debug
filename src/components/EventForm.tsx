@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import type { Category, FormState } from '../types';
+import type { ChangeEvent, FormEvent } from 'react';
+import type { Category, FormState, NewEvent } from '../types';
 
 const categories: Category[] = ['music', 'sports', 'tech', 'food'];
 
@@ -12,26 +13,30 @@ const emptyForm: FormState = {
   price: '0'
 };
 
-const EventForm = ({ onCreate }) => {
+interface EventFormProps {
+  onCreate: (event: NewEvent) => void;
+}
+
+const EventForm = ({ onCreate }: EventFormProps) => {
   const [form, setForm] = useState(emptyForm);
 
-  const handleTitleChange = e => {
+  const handleTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, title: e.target.value });
   };
 
-  const handleDateChange = e => {
+  const handleDateChange = (e: ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, date: e.target.value });
   };
 
-  const handlePriceChange = e => {
+  const handlePriceChange = (e: ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, price: e.target.value });
   };
 
-  const handleDescriptionChange = e => {
+  const handleDescriptionChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     setForm({ ...form, description: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onCreate({
       title: form.title,

@@ -1,11 +1,17 @@
 import { Link } from 'react-router';
+import type { EventItem } from '../types';
 import { formatDate, formatPrice, truncate } from '../utils/format';
 import Badge from './Badge';
 import FavoriteButton from './FavoriteButton';
 
-const availability = soldOut => (soldOut ? 'Sold out' : 'Tickets available');
+const availability = (soldOut: boolean): string => (soldOut ? 'Sold out' : 'Tickets available');
 
-const EventCard = ({ event, showDescription = true }) => (
+interface EventCardProps {
+  event: EventItem;
+  showDescription?: boolean;
+}
+
+const EventCard = ({ event, showDescription = true }: EventCardProps) => (
   <article className="event-card">
     <img src={event.imageUrl} alt={event.title} />
     <div className="event-card-body">

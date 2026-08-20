@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from 'react-router';
 import { useFavorites } from '../contexts/FavoritesContext';
 
-const navClass = ({ isActive }) => (isActive ? 'nav active' : 'nav');
+const navClass = ({ isActive }: { isActive: boolean }): string => (isActive ? 'nav active' : 'nav');
 
 const RootLayout = () => {
   const { favorites } = useFavorites();

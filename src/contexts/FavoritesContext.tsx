@@ -1,20 +1,27 @@
 import { createContext, useContext, useState } from 'react';
-const defaultValue = {
+import type { ReactNode } from 'react';
+import type { FavoritesContextValue } from '../types';
+
+const defaultValue: FavoritesContextValue = {
   favorites: [],
   toggleFavorite: () => {},
   isFavorite: () => false
 };
 
-const FavoritesContext = createContext(defaultValue);
+const FavoritesContext = createContext<FavoritesContextValue>(defaultValue);
 
-export const FavoritesProvider = ({ children }) => {
-  const [favorites, setFavorites] = useState([]);
+interface FavoritesProviderProps {
+  children: ReactNode;
+}
 
-  const toggleFavorite = id => {
+export const FavoritesProvider = ({ children }: FavoritesProviderProps) => {
+  const [favorites, setFavorites] = useState<number[]>([]);
+
+  const toggleFavorite = (id: number) => {
     setFavorites(prev => (prev.includes(id) ? prev.filter(fav => fav !== id) : [...prev, id]));
   };
 
-  const isFavorite = id => favorites.includes(id);
+  const isFavorite = (id: number) => favorites.includes(id);
 
   return (
     <FavoritesContext.Provider value={{ favorites, toggleFavorite, isFavorite }}>

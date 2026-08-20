@@ -1,6 +1,12 @@
+import type { EventItem } from '../types';
 import EventCard from './EventCard';
 
-const EventList = ({ events, emptyMessage = 'Nothing to show here.' }) => {
+interface EventListProps {
+  events: EventItem[];
+  emptyMessage?: string;
+}
+
+const EventList = ({ events, emptyMessage = 'Nothing to show here.' }: EventListProps) => {
   if (events.length === 0) return <p className="empty">{emptyMessage}</p>;
 
   return (

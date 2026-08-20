@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import EventList from '../components/EventList';
 import { useFavorites } from '../contexts/FavoritesContext';
 import { getEvents } from '../data/events';
+import type { EventItem } from '../types';
 
 const FavoritesPage = () => {
   const { favorites } = useFavorites();
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<EventItem[]>([]);
 
   useEffect(() => {
     getEvents().then(data => setEvents(data));
