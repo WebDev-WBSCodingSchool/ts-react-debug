@@ -22,7 +22,7 @@ const RootLayout = () => {
       <main className="app-main">
         <Outlet />
       </main>
-      <footer className="app-footer">Built at WBS Coding School</footer>
+      <footer className="app-footer">Built with 🤍</footer>
     </div>
   );
 };
