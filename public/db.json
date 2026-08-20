@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Hannover Synth Night",
+    "description": "An evening of modular synths, analog drums and very loud bass.",
+    "date": "2026-09-12",
+    "location": "Faust Klub",
+    "category": "music",
+    "price": 18.5,
+    "imageUrl": "https://picsum.photos/seed/event1/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 2,
+    "title": "Maschsee Half Marathon",
+    "description": "A flat and fast lap around the lake, chip timed, medal included.",
+    "date": "2026-09-27",
+    "location": "Maschsee",
+    "category": "sports",
+    "price": 35.0,
+    "imageUrl": "https://picsum.photos/seed/event2/400/240",
+    "soldOut": true
+  },
+  {
+    "id": 3,
+    "title": "TypeScript Meetup",
+    "description": "Three short talks about types, tooling and why generics are not scary.",
+    "date": "2026-09-04",
+    "location": "Hafven Coworking",
+    "category": "tech",
+    "price": 0.0,
+    "imageUrl": "https://picsum.photos/seed/event3/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 4,
+    "title": "Street Food Market",
+    "description": "Twenty trucks, one very long queue for the dumplings.",
+    "date": "2026-08-30",
+    "location": "Lister Meile",
+    "category": "food",
+    "price": 0.0,
+    "imageUrl": "https://picsum.photos/seed/event4/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 5,
+    "title": "Jazz in the Courtyard",
+    "description": "Small quartet, small yard, big sound.",
+    "date": "2026-10-02",
+    "location": "Altstadt",
+    "category": "music",
+    "price": 22.0,
+    "imageUrl": "https://picsum.photos/seed/event5/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 6,
+    "title": "Bouldering Open Day",
+    "description": "Free intro session, shoes and chalk provided.",
+    "date": "2026-09-19",
+    "location": "Boulderbar Nord",
+    "category": "sports",
+    "price": 12.0,
+    "imageUrl": "https://picsum.photos/seed/event6/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 7,
+    "title": "React Performance Workshop",
+    "description": "Profiling, memoization and knowing when to leave it alone.",
+    "date": "2026-10-10",
+    "location": "WBS Coding School",
+    "category": "tech",
+    "price": 49.0,
+    "imageUrl": "https://picsum.photos/seed/event7/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 8,
+    "title": "Ramen Pop Up",
+    "description": "One broth, two toppings, no substitutions.",
+    "date": "2026-09-06",
+    "location": "Nordstadt",
+    "category": "food",
+    "price": 14.0,
+    "imageUrl": "https://picsum.photos/seed/event8/400/240",
+    "soldOut": true
+  },
+  {
+    "id": 9,
+    "title": "Vinyl Flea Market",
+    "description": "Crates, dust and the record you have been hunting for years.",
+    "date": "2026-09-21",
+    "location": "Faust Halle",
+    "category": "music",
+    "price": 3.0,
+    "imageUrl": "https://picsum.photos/seed/event9/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 10,
+    "title": "Sunday Football Tournament",
+    "description": "Five a side, mixed teams, everyone plays at least four matches.",
+    "date": "2026-09-14",
+    "location": "Sportpark Ricklingen",
+    "category": "sports",
+    "price": 8.0,
+    "imageUrl": "https://picsum.photos/seed/event10/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 11,
+    "title": "Open Source Hack Day",
+    "description": "Bring a laptop and an issue, leave with a merged pull request.",
+    "date": "2026-10-17",
+    "location": "Leibniz Universitaet",
+    "category": "tech",
+    "price": 0.0,
+    "imageUrl": "https://picsum.photos/seed/event11/400/240",
+    "soldOut": false
+  },
+  {
+    "id": 12,
+    "title": "Craft Beer Tasting",
+    "description": "Eight pours, one very patient brewer explaining each one.",
+    "date": "2026-09-25",
+    "location": "Linden",
+    "category": "food",
+    "price": 26.0,
+    "imageUrl": "https://picsum.photos/seed/event12/400/240",
+    "soldOut": false
+  }
+]
