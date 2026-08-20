@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Hannover Synth Night",
+    "title": "Berlin Synth Night",
     "description": "An evening of modular synths, analog drums and very loud bass.",
     "date": "2026-09-12",
-    "location": "Faust Klub",
+    "location": "Faust Club",
     "category": "music",
     "price": 18.5,
-    "imageUrl": "https://picsum.photos/seed/event1/400/240",
+    "imageUrl": "https://www.berlin.de/binaries/asset/image_assets/10215010/source/1771922493/1000x500/",
     "soldOut": false
   },
   {
@@ -18,18 +18,18 @@
     "location": "Maschsee",
     "category": "sports",
     "price": 35.0,
-    "imageUrl": "https://picsum.photos/seed/event2/400/240",
+    "imageUrl": "https://www.b2run.de/run/de/de/hannover/news/2023/news-pm-ha-2023-med-2.jpg",
     "soldOut": true
   },
   {
     "id": 3,
-    "title": "TypeScript Meetup",
+    "title": "TypeScript Meetup Hamburg",
     "description": "Three short talks about types, tooling and why generics are not scary.",
     "date": "2026-09-04",
-    "location": "Hafven Coworking",
+    "location": "online",
     "category": "tech",
     "price": 0.0,
-    "imageUrl": "https://picsum.photos/seed/event3/400/240",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/c/2/c/c/clean_485989868.webp",
     "soldOut": false
   },
   {
@@ -40,7 +40,7 @@
     "location": "Lister Meile",
     "category": "food",
     "price": 0.0,
-    "imageUrl": "https://picsum.photos/seed/event4/400/240",
+    "imageUrl": "https://street-food-market.de/wp-content/uploads/2019/10/Street-Food-Meile.jpg",
     "soldOut": false
   },
   {
@@ -51,7 +51,7 @@
     "location": "Altstadt",
     "category": "music",
     "price": 22.0,
-    "imageUrl": "https://picsum.photos/seed/event5/400/240",
+    "imageUrl": "https://kultursommer.de/wp-content/uploads/2021/07/954-Brunnenhof-1300x975.jpg",
     "soldOut": false
   },
   {
@@ -62,7 +62,7 @@
     "location": "Boulderbar Nord",
     "category": "sports",
     "price": 12.0,
-    "imageUrl": "https://picsum.photos/seed/event6/400/240",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0027/2570/7874/files/bouldering5_1024x1024.jpg?v=1703459547",
     "soldOut": false
   },
   {
@@ -73,7 +73,7 @@
     "location": "WBS Coding School",
     "category": "tech",
     "price": 49.0,
-    "imageUrl": "https://picsum.photos/seed/event7/400/240",
+    "imageUrl": "https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1728825907/React_optimization_header/React_optimization_header-jpg?_i=AA",
     "soldOut": false
   },
   {
@@ -84,7 +84,7 @@
     "location": "Nordstadt",
     "category": "food",
     "price": 14.0,
-    "imageUrl": "https://picsum.photos/seed/event8/400/240",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAHOLYpTqkOBIUvBzXYJC_h6Krdxm4e5mXCD08O9ly6jdpO40sJBP74QP&s=10",
     "soldOut": true
   },
   {
@@ -95,7 +95,7 @@
     "location": "Faust Halle",
     "category": "music",
     "price": 3.0,
-    "imageUrl": "https://picsum.photos/seed/event9/400/240",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOk5wQrX61aVT9ZRITLOCB6sPBwB3FPzqHmXfPxJVANOg2rZ-LPNXDu4&s=10",
     "soldOut": false
   },
   {
@@ -103,10 +103,10 @@
     "title": "Sunday Football Tournament",
     "description": "Five a side, mixed teams, everyone plays at least four matches.",
     "date": "2026-09-14",
-    "location": "Sportpark Ricklingen",
+    "location": "Sportpark",
     "category": "sports",
     "price": 8.0,
-    "imageUrl": "https://picsum.photos/seed/event10/400/240",
+    "imageUrl": "https://afcolympians.co.uk/cdn/shop/articles/tourney.jpg?v=1729261851",
     "soldOut": false
   },
   {
@@ -114,10 +114,10 @@
     "title": "Open Source Hack Day",
     "description": "Bring a laptop and an issue, leave with a merged pull request.",
     "date": "2026-10-17",
-    "location": "Leibniz Universitaet",
+    "location": "Leibniz University",
     "category": "tech",
     "price": 0.0,
-    "imageUrl": "https://picsum.photos/seed/event11/400/240",
+    "imageUrl": "https://cdn.prod.website-files.com/68c199383e59121d3057663d/68df373e8f63a201714965e9_allspice_nr-hackaday-21.jpeg",
     "soldOut": false
   },
   {
@@ -128,7 +128,7 @@
     "location": "Linden",
     "category": "food",
     "price": 26.0,
-    "imageUrl": "https://picsum.photos/seed/event12/400/240",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/83/84/91/das-herzstuck-unserer.jpg?w=1200&h=1200&s=1",
     "soldOut": false
   }
 ]
