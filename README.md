@@ -8,6 +8,8 @@ The app was written without type annotations, so the TypeScript compiler has no 
 
 ## Setup
 
+You need Node.js 22.22 or later (`node -v`).
+
 1. Clone this repo
 2. `npm install`
 3. `npm run dev`
@@ -29,7 +31,7 @@ npm run build
 
 Aaaaand it doesn't work. You will see something like `TS7006` here and `TS2345` over there, around sixty errors in total.
 
-Do not panic at that number. There are roughly forty annotations to write, and one missing annotation often produces several errors. A single line in `src/contexts/FavoritesContext.tsx` is responsible for nine of them.
+Do not panic at that number. There are roughly forty annotations to write, and one missing annotation often produces several errors. A single line in `src/pages/EventDetailPage.tsx` is responsible for nine of them.
 
 For a faster loop while you work, use:
 
@@ -37,7 +39,7 @@ For a faster loop while you work, use:
 npm run typecheck
 ```
 
-Same errors, no bundling. The Problems panel in VS Code shows you the same thing live.
+Same errors, no bundling. The Problems panel in VS Code shows the same errors live for the files you have open.
 
 ## Suggested order
 
@@ -66,7 +68,7 @@ Every component here needs a props type. Look at how each component is used by i
 - `src/components/EventForm.tsx`
 - `src/layouts/RootLayout.tsx`
 
-Event handler parameters and one `useRef`.
+Event handler parameters, one `useRef`, and the callback `NavLink` uses to pick a class name.
 
 ### Block 4: state, context and data
 
@@ -83,6 +85,13 @@ Expect the error count to go **up** at some point. When you correctly type a com
 ## Types you have been given
 
 `src/types.ts` already contains every domain type you need. You should not have to change that file. You do have to import from it and apply it.
+
+This project, like the Vite template, has `verbatimModuleSyntax` enabled, so types must be imported with `import type`:
+
+```ts
+import type { EventItem } from '../types';
+import type { ChangeEvent } from 'react';
+```
 
 | Type | What it is |
 | --- | --- |
@@ -121,6 +130,9 @@ const [selected, setSelected] = useState<EventItem | null>(null);
 - Do not change what the app does. If the app behaves differently after your fix, the fix is wrong
 
 ## When an error message is confusing
+
+**`'EventItem' is a type and must be imported using a type-only import`**
+You imported a type with a plain `import`. Change it to `import type`.
 
 **`Expected 0 arguments, but got 1` in `FavoriteButton.tsx`**
 The functions come from the favorites context. Look at the default value the context was created with and ask yourself what TypeScript inferred those functions to be.
