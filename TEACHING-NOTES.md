@@ -1,6 +1,6 @@
 # Teaching notes
 
-Not for students. This file only lives on the `solution` branch, so a student who clones `main` never sees it.
+Not for students. This file only lives on the `solution` branch. Students working on `main` will not see it, but the branch is public, so anyone can check it out.
 
 ## What the exercise covers
 
